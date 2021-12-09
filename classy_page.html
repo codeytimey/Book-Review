@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>BookView</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="Books.jpg">
+
+<div class="container">
+	<button id="back" class="glyphicon glyphicon-log-out btn btn-success" onclick="back()">Back</button>
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()">Logout</button>
+	<center>
+		<h1 class="header">	
+			   BookView
+			<sup>
+			</sup>
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label id="hello">Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Write a review for the book or ask a question about it.">
+		<button id="send" onclick="send()">Send your Review/Question</button>
+	</div>
+</center>
+
+<script src="classy_page.js"></script>
+</body>
+</html>
